@@ -1,0 +1,25 @@
+/* CSS 를 사용한다. */
+ul {
+    /* 리스트 스타일 없애기 */
+    list-style: none;
+}
+
+/* 클래스(.)에 CSS 적용하기 */
+.male{
+    color: cadetblue;
+    font-size: 20px;
+    font-weight: 900; 
+    /* 글씨굵기 100~900 */
+}
+
+.female {
+    color: crimson;
+    font-weight: 100;
+}
+
+/* (#)id에 CSS 적용 */
+#ceo {
+    color: gold;
+    font-size: 30px;
+    font-weight: 900;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>플로트 레이아웃</title>
+    <style>
+        .container {
+            /* 화면 내용이 최대길이가 940px */
+            max-width: 940px;
+            /* 좌우 여백의 길이가 같도록=>중앙정렬 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content-area {
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+
+        .main-area {
+            width: 66%;
+            float: left;
+            background-color: beige;
+        }
+
+        .sidebar {
+            width: 34%;
+            float: right;
+            background-color: cornflowerblue;
+        }
+
+        .fix {
+            /* 위의 내용이 float되었을때 아래의 내용이 따라 올라감을 방지 */
+            clear: both;
+        }
+
+        .group:before,
+        .group:after {
+            content: "";
+            display: table;
+        }
+
+        .group:after {
+            clear: both;
+        }
+
+        .group {
+            zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Website Title</h1>
+            <p>Website slogan included here.</p>
+        </header>
+
+        <div class="content-area group">
+            <main class="main-area">
+                <p>This is main. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi deleniti quod
+                    numquam?
+                    Quam,
+                    facilis impedit? Quam possimus numquam commodi culpa, corporis blanditiis eaque harum quaerat
+                    ratione
+                    animi
+                    magnam! Quas, a.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quo quam expedita vero adipisci
+                    similique
+                    deleniti fugit maiores odio quas repellat neque, veritatis molestiae accusamus, porro accusantium
+                    temporibus
+                    tempora sapiente!</p>
+            </main>
+            <aside class="sidebar">
+                <p>This is sidebar. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est modi amet
+                    nesciunt
+                    repellendus quis maiores expedita distinctio deserunt fugiat, sit laboriosam aspernatur labore rem
+                    dolore hic
+                    nulla laborum qui.</p>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy; 2021 - This is the footer.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

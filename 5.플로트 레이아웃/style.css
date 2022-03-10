@@ -1,0 +1,115 @@
+html {
+    background-color: #E3CAA5;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #617140;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+
+/* 네비게이션 메뉴 */
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    /* 모든 리스트를 왼쪽 한줄로 배치 */
+    float: left;
+    margin-right: 5px;
+}
+
+
+.site-nav a {
+    /* a 태그 링크를 없앰 */
+    text-decoration: none;
+    /* a태그가 인라인이기 때문에 블록으로 수정 */
+    display: block;
+    color: #617140;
+    padding: 10px 20px;
+    border: 3px solid #e5e9dc;
+    border-bottom: none;
+}
+
+/* 마우스를 올렸을때 */
+.site-nav a:hover {
+    background-color: #e5e9dc;
+}
+
+
+
+
+.content-area {
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 34%;
+    float: left;
+    background-color: #e5e9dc;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
