@@ -83,6 +83,23 @@ header p {
 img{
     max-width: 100%;
 }
+.image-banner{
+    /* 부모태그에서 포지션 relative 자식 앱솔루트 */
+    position: relative;
+}
+.image-banner img {
+    display: block;
+}
+.banner-description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 25px;
+    
+}
 
 
 .sidebar {
